@@ -1,0 +1,69 @@
+
+<html>
+
+<head>
+  <title>
+    Data to be sent
+  </title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark clearfix">
+        <a class="navbar-brand" id="navigator" href="admin.html">(A)</a>
+    </nav>  
+  <div class="jumbotron jumbotron-fluid clearfix" id="jumbo">
+    <div class="container">
+      <h1 class="display-4">Welcome to IDO-NMP
+        <br>
+        Executive Status Report 
+      </h1>
+        <br>
+      <p class="lead">Please fill the required data below</p>
+     
+    </div>
+  </div>
+<form id="mainform">
+  <div id="Form1" class="col-sm-5 center">
+      <label>Name: </label> <input id="name" type="text" class="form-control .form-control-lg"><br>
+      <div class="form-group"aria-colspan="5" offset="5">
+        <label for="exampleFormControlSelect1">Select Project: </label>
+        <select class="form-control" id="projectname">
+          <option>RAPID Drives</option>
+          <option>ADAS</option>
+          <option>NCNG</option>
+          <option>Observation Repository</option>
+          <option>Addressing and Cartography EEU</option>
+          <option>Gottlieb</option>
+          <option>HERE HD Lanes</option>
+          <option>COMMUNITY</option>
+        </select>
+      </div>
+      
+      <label>Key Highlights: </label> <input id="keyhighlights" type="text" class="form-control .form-control-lg"><br>
+      <label>Other Achievements: </label> <input id="achievements" type="text" class="form-control .form-control-lg"><br>
+      <label>Primary Issues/Concerns: </label> <input id="concerns" type="text" class="form-control .form-control-lg"><br>
+      <label>Other Issues/Concerns: </label> <input id="othrconcerns" type="text" class="form-control .form-control-lg"><br>
+      <label>Upcoming Events: </label> <input id="upevents" type="text" class="form-control .form-control-lg"><br>
+ 
+  
+        <button id="savebutton" class="btn btn-dark btn-lg">Submit</button>
+        <button class="btn btn-dark btn-lg">Reset</button>
+  
+  <br><br><br>
+  <div id="successbar" class="alert alert-success barstyle" role="alert"></div>
+  <br>
+  <div id="failbar" class="alert alert-danger barstyle" role="alert"></div>
+</div>
+</form>
+
+</body>
+
+<script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-firestore.js"></script>
+<script src="app.js"></script>
+
+</html>

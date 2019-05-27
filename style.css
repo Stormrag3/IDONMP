@@ -1,0 +1,21 @@
+.center {
+    margin: auto;
+    width: 90%;
+    border: 1px solid#383D43;
+    padding: 10px;
+  }
+
+  #jumbo{
+    background-color:#383D43;
+    color: white;
+  }
+
+  #navigator{
+    background-color:#383D43;
+    color: white;
+    float: right;
+  }
+
+.barstyle{
+  text-align: center;
+}
