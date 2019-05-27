@@ -23,6 +23,8 @@ var firebaseConfig = {
     if(doc && doc.exists){
         const myData = doc.data();
         document.getElementById("datashow1").innerHTML=" Name: " + myData.name ;
+        document.getElementById("datashow7").innerHTML=" Date: " + myData.date ;
+        document.getElementById("datashow8").innerHTML=" Project : " + myData.projectname ;
         document.getElementById("datashow2").innerHTML=" Keyhighlights: " + myData.keyhighlights;
         document.getElementById("datashow3").innerHTML=" Achievements: "+ myData.achievements ;
         document.getElementById("datashow4").innerHTML=" Concerns: " + myData.concerns ;

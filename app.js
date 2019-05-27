@@ -25,18 +25,19 @@ function storethedata(e){
 e.preventDefault();
 
 const name= calldata('name');
-//const projectname= calldata('projectname');
+const projectname= calldata('projectname');
 const keyhighlights= calldata('keyhighlights');
 const achievements= calldata('achievements');
 const concerns= calldata('concerns');
 const othrconcerns= calldata('othrconcerns');
 const upevents= calldata('upevents');
-
+const datedata= calldata('datedata');
 
 console.log("Storing data for " + name +" now!");
   docRef.set({
     name: name,
-    //  projectname: projectname,
+    datedata: datedata,
+    projectname: projectname,
     keyhighlights: keyhighlights,
     achievements: achievements,
     concerns: concerns,
