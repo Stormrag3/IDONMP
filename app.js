@@ -11,7 +11,11 @@ var firebaseConfig = {
 firebase.initializeApp(firebaseConfig);
 var firestore = firebase.firestore();
 
-const docRef= firestore.doc("production/data/"+projectname);
+// sets project name value to null
+document.getElementById("projectname").selectedIndex = -1;
+// sets project name properly 
+var pname= document.getElementById('projectname').value;
+const docRef= firestore.doc("production/data/"+pname);
 
 
 function calldata(id){
