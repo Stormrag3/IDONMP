@@ -11,7 +11,7 @@ var firebaseConfig = {
 firebase.initializeApp(firebaseConfig);
 var firestore = firebase.firestore();
 
-const docRef= firestore.doc("production/data");
+const docRef= firestore.doc("production/data/"+projectname);
 
 
 function calldata(id){
