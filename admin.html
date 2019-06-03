@@ -1,4 +1,3 @@
-
 <html>
 
         <head>
@@ -8,10 +7,17 @@
           <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
             integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
             <link rel="stylesheet" href="style.css">
-            
+            <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-app.js"></script>
+                
+        <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-firestore.js"></script>
+        
+        
+        
         </head>
         
-        <body>
+        <body onload="init()">
+        
+
             <nav class="navbar navbar-expand-lg navbar-light bg-dark clearfix">
                 <a class="navbar-brand" id="navigator" href="#">(A)</a>
                 <a class="navbar-brand" id="navigator" href="index.html">(B)</a>
@@ -27,13 +33,14 @@
              
             </div>
           </div>
-              <form class="center">
+              <form class="center" action="#">
                     <div class="row">
                       <div class="col">
                         
                             <div class="form-group"aria-colspan="5" offset="5">
                                     <label for="exampleFormControlSelect1">Select Project: </label>
-                                    <select class="form-control" id="projectname">
+                                    <select class="form-control" id="Adminprojectname">
+                                      <option>ALL</option>
                                       <option>RAPID Drives</option>
                                       <option>ADAS</option>
                                       <option>NCNG</option>
@@ -44,7 +51,7 @@
                                       <option>COMMUNITY</option>
                                     </select>
                                   </div>
-                                  <button id="retrivebutton" class="btn btn-dark btn-lg">Retrieve</button>
+                                  <button id="retrivebutton1" class="btn btn-dark btn-lg">Retrieve</button>
                       </div>
                       <div class="col">
                         
@@ -56,32 +63,18 @@
                     <br>
                 <div id="failbar" class="alert alert-danger barstyle" role="alert"></div>
                 </div>
-                  <div class="center">
+                  <div class="center" id="admindata" style="align-content: center">
                       <h2>
                           Data to be retrived: 
                       </h2>
                       <hr>
-                      <div id="datashow1"> 
-                      </div><br>
-                      <div id="datashow7"> 
-                        </div><br>
-                        <div id="datashow8"> 
-                            </div><br>
-                      <div id="datashow2">
-                        </div><br>
-                        <div id="datashow3">
-                            </div><br>
-                            <div id="datashow4">
-                                </div><br>
-                                <div id="datashow5">
-                                    </div><br>
-                                    <div id="datashow6">
-                                        </div><br>
+                      <div id='parentdiv'></div>
+
+                      <button id="exportMS" onclick="Export2Doc()" class="center">Export To Ms.Word</button>       
                   </div>
-            </body>
-        
-        <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-app.js"></script>
-        <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-firestore.js"></script>
-        <script src="admin.js"></script>
-        
+                  <script src="admin.js"></script>
+
+            
+            
+                </body>        
         </html>
