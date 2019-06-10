@@ -1,0 +1,211 @@
+<html>
+
+ 
+
+        <head>
+
+          <title>
+
+            Admin
+
+          </title>
+
+          <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+            <link rel="stylesheet" href="style.css">
+
+            <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-app.js"></script>
+
+               
+
+        <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-firestore.js"></script>
+
+       
+
+        
+
+        
+
+        </head>
+
+       
+
+        <body onload="init()">
+
+       
+
+ 
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-dark clearfix">
+
+                <a class="navbar-brand" id="navigator" href="#">(A2)</a>
+
+                <a class="navbar-brand" id="navigator" href="index.html">(B)</a>
+
+                <a class="navbar-brand" id="navigator" href="admin.html">(A)</a>
+
+            </nav> 
+
+          <div class="jumbotron jumbotron-fluid clearfix" id="jumbo">
+
+            <div class="container">
+
+              <h1 class="display-4">Hello Admin,
+
+                <br>
+
+                IDO-NMP Executive Status Report
+
+              </h1>
+
+                <br>
+
+              <p class="lead">Please select the project name and press the Retrieve button</p>
+
+            
+
+            </div>
+
+          </div>
+
+              <form class="center" action="#">
+
+                    <div class="row">
+
+                      <div class="col">
+
+                       
+
+                            <div class="form-group"aria-colspan="5" offset="5">
+
+                                    <label for="exampleFormControlSelect1">Select Project: </label>
+
+                                    <select class="form-control" id="Adminprojectname">
+
+                                      <option>ALL</option>
+
+                                      <option>RAPID Drives</option>
+
+                                      <option>ADAS</option>
+
+                                      <option>NCNG</option>
+
+                                      <option>Observation Repository</option>
+
+                                      <option>Addressing and Cartography EEU</option>
+
+                                      <option>Gottlieb</option>
+
+                                      <option>HERE HD Lanes</option>
+
+                                      <option>COMMUNITY</option>
+
+                                    </select>
+
+                                  </div>
+
+                                  <button id="retrivebutton1" class="btn btn-dark btn-lg">Retrieve</button>
+
+                      </div>
+
+                      <div class="col">
+
+                       
+
+                      </div>
+
+                    </div>
+
+                  </form>
+
+                  <br><br> 
+
+                  <div id="successbar" class="alert alert-success barstyle" role="alert"></div>
+
+                    <br>
+
+                <div id="failbar" class="alert alert-danger barstyle" role="alert"></div>
+
+                </div>
+
+                  <div class="center" id="admindata" style="align-content: center">
+
+                      <h2>
+
+                          IDO-NMP : <br>Executive Status Report
+
+                      </h2>
+
+                      <hr>
+
+                      <div id='parentdiv'>
+
+                          <div><h4>Key Highlights :</h4></div><br>
+
+                          <div id='div_kh'>
+
+                          </div>
+
+ 
+
+                          <br>
+
+                          <div><h4>Achivements :</h4></div><br>
+
+                          <div id='div_achive'>
+
+                          </div>
+
+ 
+
+                          <br>
+
+                          <div><h4>Primary Issues/Concerns :</h4></div><br>
+
+                          <div id='div_pissue'>
+
+                          </div>
+
+ 
+
+                          <br>
+
+                          <div><h4>Other Issues/Concerns :</h4></div><br>
+
+                          <div id='div_oissue'>
+
+                          </div>
+
+ 
+
+                          <br>
+
+                          <div><h4>Upcoming Events :</h4></div><br>
+
+                          <div id='div_upevent'>
+
+                          </div>
+
+ 
+
+                      </div>
+
+ 
+
+                      <button id="exportMS" onclick="Export2Doc()" class="center">Export To Ms.Word</button>      
+
+                  </div>
+
+                  <script src="admin_2.js"></script>
+
+ 
+
+           
+
+            
+
+                </body>       
+
+        </html>
