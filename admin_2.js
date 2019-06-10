@@ -116,7 +116,7 @@ function createPanel(querySnapshot){
 
        
 
-        childDiv.innerHTML ="<div> => " + myData.projectname +"</div><br>" + 
+        childDiv.innerHTML ="<div> <b> " + myData.projectname +" </b> </div><br>" + 
 
                             "<div>   " + myData.keyhighlights +"</div><br>";
 
@@ -128,7 +128,7 @@ function createPanel(querySnapshot){
 
         achive.appendChild(childDiv);
 
-        childDiv.innerHTML ="<div> => " + myData.projectname +"</div><br>" + 
+        childDiv.innerHTML ="<div> <b> " + myData.projectname +"</b> </div><br>" + 
 
                             "<div>   " + myData.achievements +"</div><br>";
 
@@ -142,7 +142,7 @@ function createPanel(querySnapshot){
 
         pissue.appendChild(childDiv);
 
-        childDiv.innerHTML ="<div> => " + myData.projectname +"</div><br>" + 
+        childDiv.innerHTML ="<div> <b> " + myData.projectname +" </b> </div><br>" + 
 
                             "<div>   " + myData.achievements +"</div><br>";
 
@@ -156,7 +156,7 @@ function createPanel(querySnapshot){
 
         oissue.appendChild(childDiv);
 
-        childDiv.innerHTML ="<div> => " + myData.projectname +"</div><br>" + 
+        childDiv.innerHTML ="<div> <b> " + myData.projectname +" </b> </div><br>" + 
 
                             "<div>   " + myData.achievements +"</div><br>";
 
@@ -170,7 +170,7 @@ function createPanel(querySnapshot){
 
         upevent.appendChild(childDiv);
 
-        childDiv.innerHTML ="<div> => " + myData.projectname +"</div><br>" + 
+        childDiv.innerHTML ="<div> <b> " + myData.projectname +" </b> </div><br>" + 
 
                             "<div>   " + myData.achievements +"</div><br>";
 
