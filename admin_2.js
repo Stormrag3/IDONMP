@@ -116,7 +116,7 @@ function createPanel(querySnapshot){
 
        
 
-        childDiv.innerHTML ="<div> <b> " + myData.projectname +" </b> </div><br>" + 
+        childDiv.innerHTML ="<div><b> " + myData.projectname +" </b> </div><br>" + 
 
                             "<div>   " + myData.keyhighlights +"</div><br>";
 
